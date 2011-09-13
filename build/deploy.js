@@ -28,11 +28,12 @@ function ok(code) {
 }
 
 module.exports = function () {
-    test(function (code) {
-        ok(code, "red tests");
-        lint(function (code) {
-            ok(code);
-            build(null, {compress: true});
-        });
-    });
+    build(null, {compress: true});
+//    test(function (code) {
+//        ok(code, "red tests");
+//        lint(function (code) {
+//            ok(code);
+//            build(null, {compress: true});
+//        });
+//    });
 };
